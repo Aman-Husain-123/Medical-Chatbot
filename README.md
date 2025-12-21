@@ -34,36 +34,36 @@ It allows users to upload medical PDFs and ask questions directly from those doc
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
-|--------|------------|
-| Frontend | Streamlit |
-| LLM Framework | LangChain |
-| Vector Store | FAISS |
-| Language Model | Euri AI (LLM API) |
-| Text Processing | RecursiveCharacterTextSplitter |
-| Backend | Python |
-| Embeddings | LLM-based embeddings |
+- | Category | Technology |
+- |--------|------------|
+- | Frontend | Streamlit |
+- | LLM Framework | LangChain |
+- | Vector Store | FAISS |
+- | Language Model | Euri AI (LLM API) |
+- | Text Processing | RecursiveCharacterTextSplitter |
+- | Backend | Python |
+- | Embeddings | LLM-based embeddings |
 
 ---
 
 ## 📂 Project Structure
 
 MedChat-Pro/
-│
-├── app/
-│ ├── chat_utils.py # LLM initialization & querying
-│ ├── pdf_utils.py # PDF text extraction
-│ ├── vectorstore_utils.py # FAISS index creation & retrieval
-│ ├── ui.py # UI helper components
-│ └── config.py # API keys & configuration
-│
-├── assets/
-│ └── doctor_icon.png # (Optional) App icon
-│
-├── app.py # Main Streamlit application
-├── requirements.txt # Project dependencies
-├── README.md # Project documentation
-└── .gitignore
+- │
+- ├── app/
+- │ ├── chat_utils.py # LLM initialization & querying
+- │ ├── pdf_utils.py # PDF text extraction
+- │ ├── vectorstore_utils.py # FAISS index creation & retrieval
+- │ ├── ui.py # UI helper components
+- │ └── config.py # API keys & configuration
+- │
+- ├── assets/
+- │ └── doctor_icon.png # (Optional) App icon
+- │
+- ├── app.py # Main Streamlit application
+- ├── requirements.txt # Project dependencies
+- ├── README.md # Project documentation
+- └── .gitignore
 
 
 ---
