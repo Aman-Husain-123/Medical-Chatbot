@@ -231,7 +231,9 @@ if prompt := st.chat_input("Ask about your medical documents..."):
         # Error if documents not processed
         with st.chat_message("assistant"):
             st.error("⚠️ Please upload and process documents first!")
-            st.caption(timestamp)
+            st.cap(myenv) (base) PS C:\Users\user\OneDrive\Documents\Generative_AI\MediChatbot> git push -u origin main                            
+remote: Repository not found.
+fatal: repository 'https://github.com/your-username/medichat-pro.git/' not foundtion(timestamp)
 
 
 # ============================
