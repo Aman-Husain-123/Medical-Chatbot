@@ -154,10 +154,7 @@ http://localhost:8501
 You can add screenshots like this:
 
 ```md
-![Home Page](![alt text](image.png))
-![Document Processing](![alt text](image-1.png))
-![Chat Response](![alt text](image-2.png))
-
+<img width="1911" height="908" alt="image" src="https://github.com/user-attachments/assets/5139e01b-6190-4d85-8052-313e1f9c121b" />
 
 
 
