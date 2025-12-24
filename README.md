@@ -21,7 +21,7 @@ Now enhanced with **Enterprise Features**: Authentication, Batch Processing, and
 
 ### 3️⃣ Security & Access Control
 - **Role-Based Access**:
-  - �‍⚕️ **Doctor**: Full access (Upload + Chat)
+  - 👨‍⚕️ **Doctor**: Full access (Upload + Chat)
   - 👩‍⚕️ **Nurse**: Full access (Upload + Chat)
   - 👤 **Patient**: View only (Restricted upload)
 - **Session Management**: Secure login/logout functionality.
@@ -33,14 +33,49 @@ Now enhanced with **Enterprise Features**: Authentication, Batch Processing, and
 
 ---
 
-## 🧠 Architecture (RAG Pipeline)
+## 🔄 User Journey & Outputs
 
-1. **Secure Login**: Verify user credentials and role.
-2. **PDF Ingestion**: Extract text from multiple PDFs (`MediPDF_Processor`).
-3. **Chunking**: Smart text splitting (1000 chars) for optimal context.
-4. **Vector Indexing**: FAISS + Sentence Transformers (`MediVectorStore`).
-5. **Semantic Retrieval**: Find relevant chunks across all docs.
-6. **LLM Generation**: Euri AI model generates the final answer (`MediChatUtils`).
+Here is the complete workflow of the application:
+
+### Step 1: Secure Login
+Users must authenticate to access the system.
+```text
+[Screen: Login Page]
+Username: doctor
+Password: •••••••••••
+[Button: Log In] -> Success! Redirecting to Dashboard...
+```
+
+### Step 2: Document Ingestion (Batch Processing)
+Upload multiple PDFs. The system processes them in real-time.
+```text
+[Sidebar: Processed Documents]
+------------------------------------------------
+✅ medical_history_1.pdf  |  Success  |  12 chunks
+✅ lab_results_2024.pdf   |  Success  |  8 chunks
+❌ corrupted_file.pdf     |  Error    |  Skipped
+------------------------------------------------
+msg: "✅ Successfully processed 2 document(s)!"
+```
+
+### Step 3: Architecture Pipeline (Internal)
+How the system handles your data:
+1. **Extraction**: `MediPDF_Processor` extracts text from PDFs.
+2. **Chunking**: Text split into 1000-char segments with overlap.
+3. **Indexing**: `MediVectorStore` embeds chunks into FAISS vector DB.
+
+### Step 4: Intelligent Q&A
+Ask complex medical questions.
+```text
+User: "What medications is the patient currently taking?"
+
+MediChat Pro:
+"Based on the medical history, the patient is currently prescribed:
+1. Lisinopril (10mg) for hypertension
+2. Metformin (500mg) for type 2 diabetes
+
+[Source: medical_history_1.pdf]"
+```
 
 ---
 
