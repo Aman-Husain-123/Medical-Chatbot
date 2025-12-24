@@ -1,0 +1,42 @@
+[
+  {
+    "id": "q1",
+    "query": "What are the patient's symptoms?",
+    "response": "The medical documents do not specify any current symptoms for the patient.",
+    "latency": 2.0253632068634033,
+    "keyword_recall": 0.3333333333333333,
+    "ground_truth": "Chest pain and shortness of breath."
+  },
+  {
+    "id": "q2",
+    "query": "Does the patient have any chronic conditions?",
+    "response": "Yes, the patient has a chronic condition of hypertension.",
+    "latency": 2.695556163787842,
+    "keyword_recall": 0.6666666666666666,
+    "ground_truth": "Yes, hypertension and diabetes."
+  },
+  {
+    "id": "q3",
+    "query": "What do the EKG results show?",
+    "response": "The medical documents do not provide any information about the EKG results.",
+    "latency": 1.4765093326568604,
+    "keyword_recall": 0.3333333333333333,
+    "ground_truth": "Normal sinus rhythm."
+  },
+  {
+    "id": "q4",
+    "query": "Is the patient allergic to anything?",
+    "response": "No, the patient has no known allergies.",
+    "latency": 1.5506155490875244,
+    "keyword_recall": 0.0,
+    "ground_truth": "Allergic to penicillin and sulfa drugs."
+  },
+  {
+    "id": "q5",
+    "query": "What about blood pressure?",
+    "response": "The recent labs show that John Doe's blood pressure is controlled.",
+    "latency": 1.20290207862854,
+    "keyword_recall": 0.3333333333333333,
+    "ground_truth": "Readings show consistent elevation."
+  }
+]

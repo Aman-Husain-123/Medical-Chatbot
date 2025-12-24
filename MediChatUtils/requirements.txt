@@ -1,0 +1,4 @@
+euriai
+langchain
+langchain-core
+langchain-community

@@ -1,0 +1,52 @@
+[
+    {
+        "id": "q1",
+        "question": "What are the patient's symptoms?",
+        "ground_truth": "Chest pain and shortness of breath.",
+        "keywords": [
+            "chest pain",
+            "shortness of breath",
+            "symptoms"
+        ]
+    },
+    {
+        "id": "q2",
+        "question": "Does the patient have any chronic conditions?",
+        "ground_truth": "Yes, hypertension and diabetes.",
+        "keywords": [
+            "hypertension",
+            "diabetes",
+            "chronic"
+        ]
+    },
+    {
+        "id": "q3",
+        "question": "What do the EKG results show?",
+        "ground_truth": "Normal sinus rhythm.",
+        "keywords": [
+            "ekg",
+            "ecg",
+            "normal sinus rhythm"
+        ]
+    },
+    {
+        "id": "q4",
+        "question": "Is the patient allergic to anything?",
+        "ground_truth": "Allergic to penicillin and sulfa drugs.",
+        "keywords": [
+            "allergic",
+            "penicillin",
+            "sulfa"
+        ]
+    },
+    {
+        "id": "q5",
+        "question": "What about blood pressure?",
+        "ground_truth": "Readings show consistent elevation.",
+        "keywords": [
+            "blood pressure",
+            "elevation",
+            "high"
+        ]
+    }
+]
