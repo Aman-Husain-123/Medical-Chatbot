@@ -7,7 +7,21 @@ Now enhanced with **Enterprise Features**: Authentication, Batch Processing, and
 
 ---
 
-## 🚀 Key Features
+## � Application Demo
+
+### 1️⃣ Secure Login Screen
+The entry point of the application, securing patient data with role-based access.
+
+![Login Screen](assets/login_screen.png)
+
+### 2️⃣ Multi-Document Dashboard
+Upload and process multiple PDF files simultaneously. The sidebar tracks the status of every document.
+
+![Dashboard Screen](assets/dashboard_screen.png)
+
+---
+
+## �🚀 Key Features
 
 ### 1️⃣ Intelligent Chat
 - **Context-Aware**: Retrieve accurate answers from uploaded medical documents.
@@ -33,53 +47,7 @@ Now enhanced with **Enterprise Features**: Authentication, Batch Processing, and
 
 ---
 
-## 🔄 User Journey & Outputs
-
-Here is the complete workflow of the application:
-
-### Step 1: Secure Login
-Users must authenticate to access the system.
-```text
-[Screen: Login Page]
-Username: doctor
-Password: •••••••••••
-[Button: Log In] -> Success! Redirecting to Dashboard...
-```
-
-### Step 2: Document Ingestion (Batch Processing)
-Upload multiple PDFs. The system processes them in real-time.
-```text
-[Sidebar: Processed Documents]
-------------------------------------------------
-✅ medical_history_1.pdf  |  Success  |  12 chunks
-✅ lab_results_2024.pdf   |  Success  |  8 chunks
-❌ corrupted_file.pdf     |  Error    |  Skipped
-------------------------------------------------
-msg: "✅ Successfully processed 2 document(s)!"
-```
-
-### Step 3: Architecture Pipeline (Internal)
-How the system handles your data:
-1. **Extraction**: `MediPDF_Processor` extracts text from PDFs.
-2. **Chunking**: Text split into 1000-char segments with overlap.
-3. **Indexing**: `MediVectorStore` embeds chunks into FAISS vector DB.
-
-### Step 4: Intelligent Q&A
-Ask complex medical questions.
-```text
-User: "What medications is the patient currently taking?"
-
-MediChat Pro:
-"Based on the medical history, the patient is currently prescribed:
-1. Lisinopril (10mg) for hypertension
-2. Metformin (500mg) for type 2 diabetes
-
-[Source: medical_history_1.pdf]"
-```
-
----
-
-## 📂 Project Structure
+##  Project Structure
 
 ```
 MediChatbot/
@@ -90,6 +58,7 @@ MediChatbot/
 │   ├── vectorstore_utils.py # FAISS index handler
 │   ├── ui.py                # UI components
 │   └── config.py            # API configuration
+├── assets/                  # Demo screenshots
 ├── MediPDF_Processor/       # Core PDF logic modules
 ├── MediVectorStore/         # Core Vector Store modules
 ├── MediChatUtils/           # Core Chat logic modules
